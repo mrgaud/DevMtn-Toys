@@ -7,7 +7,7 @@ var q = {
 };
 
 function letterChange(str) {
-    var complete = '';
+    let complete = '';
     str = str.split('').map(function(obj) {
         if (obj === "z") {
             complete += "a";
@@ -23,7 +23,7 @@ function letterChange(str) {
             }
         }
     });
-    console.log(complete);
+    // console.log(complete);
     return complete;
 }
-console.log(letterChange('hello'))
+console.log(letterChange('hello world'))
